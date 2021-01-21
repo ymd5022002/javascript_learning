@@ -22,10 +22,10 @@
 </div>
 <script>
     var ajax = new XMLHttpRequest();
-    ajax.open('GET' , 'images.json'); //'https://raw.githubusercontent.com/ymd5022002/javascript_learning/master/images.json');
-    
-    //https://github.com/ymd5022002/javascript-test/blob/master/images.json
-    //http://h2o-space.com/htmlbook/images.php');
+    ajax.open('GET' , 'images.json'); 　　//相対指定でもうまく行った！　ただ、更新前の古い方のJsonを読み込んでるかも、、それとも、後進に時間がかかっているのか？？
+    //https://raw.githubusercontent.com/ymd5022002/javascript_learning/master/images.json　　←Rawだとうまく行く
+    //https://github.com/ymd5022002/javascript-test/blob/master/images.json　←リポジトリの表示だとダメ
+    //http://h2o-space.com/htmlbook/images.php　←教本に乗っていたアドレス
     ajax.responseType = 'json';
     ajax.send(null);
 
